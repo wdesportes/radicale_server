@@ -21,7 +21,7 @@ type = owner_only
 # Works with a folder
 # #Documentation
 type = database
-database_url = mysql://User:Password@HostOrIp/radicale?charset=utf8
+database_url = mysql://User:Password@HostOrIp/DbName?charset=utf8
 
 [logging]
 config = /etc/radicale/logging
