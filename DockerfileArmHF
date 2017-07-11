@@ -1,4 +1,4 @@
-FROM debian
+FROM armhf/debian
 
 # Version of Radicale (e.g. 2.0.0)
 ENV VERSION 1.1.4
