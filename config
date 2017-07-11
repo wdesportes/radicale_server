@@ -1,0 +1,29 @@
+[server]
+# Default port : 5232
+hosts = 0.0.0.0:13005
+
+[encoding]
+request = utf-8
+stock = utf-8
+
+[auth]
+type = htpasswd
+htpasswd_filename = /etc/radicale/users
+htpasswd_encryption = plain
+
+[rights]
+type = owner_only
+# Works
+#type = from_file
+#file = /etc/radicale/rights
+
+[storage]
+# Works with a folder
+# #Documentation
+type = database
+database_url = mysql://User:Password@HostOrIp/radicale?charset=utf8
+
+[logging]
+config = /etc/radicale/logging
+debug = TRUE
+

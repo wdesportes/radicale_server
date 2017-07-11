@@ -1,0 +1,9 @@
+[allow-read]
+user: .*
+collection: ^%(login)s/.*$
+permission: r
+
+[owner-write]
+user: .*
+collection: ^%(login)s/.*$
+permission: w
