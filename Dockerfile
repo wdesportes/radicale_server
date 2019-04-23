@@ -3,6 +3,11 @@ FROM debian
 # Version of Radicale (e.g. 2.0.0)
 ENV VERSION 1.1.4
 
+LABEL org.label-schema.vcs-url="https://github.com/williamdes/radicale_server"
+LABEL org.label-schema.name="Radicale server 1.1.4"
+LABEL org.label-schema.description="Radicale server 1.1.4 with MySQL connection"
+LABEL org.label-schema.url="https://radicale.org/"
+
 # Install dependencies
 RUN apt-get update && apt-get install python3 python3-pip -y
 #      python3-dev \
